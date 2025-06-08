@@ -154,6 +154,7 @@ Please open issues or pull requests to help improve the system.
 
 **Samratha Reddy**  
 Samratha Reddy is a graduate student at Cleveland State University. This project showcases skills in backend development, graph theory, data visualization, and full-stack integration.
+
 📫 Email: samrathareddyk@gmail.com  
 🔗 LinkedIn: [linkedin.com/in/samrathareddy](https://www.linkedin.com/in/samrathareddy)
 
