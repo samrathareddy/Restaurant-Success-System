@@ -1,0 +1,37 @@
+
+name: Release Exported Files
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Create release artifacts folder
+      run: |
+        mkdir -p release
+        cp *.csv release/ || true
+        cp *.json release/ || true
+
+    - name: Upload Release Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: restaurant-exports
+        path: release/
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: Restaurant System v${{ github.ref_name }}
+        tag_name: ${{ github.ref_name }}
+        files: release/*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

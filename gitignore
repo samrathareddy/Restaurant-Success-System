@@ -1,0 +1,29 @@
+
+# Compiled binary
+*.o
+*.out
+*.exe
+restaurant_app
+
+# SQLite database file
+*.db
+
+# Exported data
+*.csv
+*.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Backup files
+*~
+
+# Ignore Docker build context cache
+**/__pycache__/
+**/.venv/
+**/.vscode/

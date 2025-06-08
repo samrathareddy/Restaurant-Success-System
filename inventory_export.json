@@ -1,0 +1,12 @@
+[
+    {
+        "item_id": "ITM001",
+        "item_name": "Cheeseburger",
+        "quantity": 50
+    },
+    {
+        "item_id": "ITM002",
+        "item_name": "Veggie Pizza",
+        "quantity": 30
+    }
+]

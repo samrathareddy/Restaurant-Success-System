@@ -1,0 +1,9 @@
+
+# Environment configuration for Restaurant Success System
+
+# Timezone for the container
+TZ=UTC
+
+# DockerHub credentials (if needed for build)
+# DOCKERHUB_USERNAME=your_username
+# DOCKERHUB_TOKEN=your_token
